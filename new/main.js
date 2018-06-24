@@ -118,6 +118,7 @@ $(function(){
             web3 = new Web3(new Web3.providers.HttpProvider(rpUrl));
         }
     }
+    console.log(web3.eth.accounts);
     //填充下拉框
     function fillAccounts(toSelectId, excludeAdminAccount){
         // web3.eth.accounts 含有区块链全部的账号
